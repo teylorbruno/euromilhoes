@@ -1,0 +1,71 @@
+:root {
+	--base-font-color: #191919;
+	--light-green: lightgreen;
+}
+
+* {
+	font-family: 'Comfortaa', cursive;
+	color: var(--base-font-color);
+}
+
+html, body, div, p, span, h1, h2, h3, h4, h5, h6, tr, td, ul, li, ol {
+	margin: 0;
+	padding: 0;
+}
+
+body > div {
+	box-sizing: border-box;
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	/*! box-sizing: border-box; */
+}
+
+.column {
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.column > div {
+	padding: .5rem;
+	flex: 1;
+	border: solid 2px white;
+	border-radius: 50%;
+}
+
+.button {
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	border: none;
+	background-color: var(--light-green);
+	box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #5fe85f;
+}
+
+.no-border {
+	border: none !important;
+}
+
+.mt {
+	margin-top: .5rem;
+}
+
+.marked-number {
+	background-color: lightgrey;
+}
+
+.marked-star {
+	background-color: gold;
+}
